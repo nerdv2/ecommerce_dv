@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8589-1" />
-<title>ecommerce Admin Panel</title>
+<title>ecommerce_dv Admin Panel</title>
 <link href="style.css" rel="stylesheet">
 </head>
 
@@ -20,7 +20,7 @@
 <table width="850" border="1" cellpadding="0" align="center" class="bordered">
 	<!--DWLayoutTable-->
 	<tr>
-		<td colspan="3" width="150" height="29" align="center" valign="middle" bgcolor="#00FFFF"><a href="">Users Management</td>
+		<td colspan="3" width="150" height="29" align="center" valign="middle" bgcolor="#00FFFF"><a href="usermgmt.php">Users Management</td>
 	</tr>
   <tr>
 		<td width="150" height="29" align="center" valign="middle" bgcolor="#00FFFF">Ecommerce Management</td>
