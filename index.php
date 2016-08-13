@@ -19,7 +19,7 @@
 		        echo '<img src=img/' . $image . ' style="max-width:220px;max-height:240px;width:220px;height:240px;"></img><br/>';
  		        echo $name .'<br/>';
 		        echo "</a>";
-    		    echo '$'.$price .'<br/>';
+    		    echo 'Rp.'.$price .'<br/>';
     		    echo "</td>";
 	        } else {
 		        $x=1;
