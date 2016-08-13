@@ -53,7 +53,7 @@
 		<input type="submit" name="Submit" value="Empty Cart" style="font-family:verdana; font-size:150%;" > 
 	</form>
 	</td><td>
-	<form method="POST" action="checklogin.php">
+	<form method="POST" action="getauth.php">
 		<input id="cartamount" name="cartamount" type="hidden" value= "<?php echo $totalamount ; ?>">
 		<input type="submit" name="Submit" value="Checkout"  style="font-family:verdana; font-size:150%;" >
 	</form>
