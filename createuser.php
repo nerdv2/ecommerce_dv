@@ -29,18 +29,26 @@
     $hashed_pass = hash('sha256', $password);
 
 
-    // check email exist or not
+    // check username exist or not
     $query = "SELECT username FROM users WHERE username='$username'";
     $result = mysqli_query($connect, $query) or die(mysql_error());
  
-    $count = mysqli_num_rows($result); // if email not found then proceed
+    $count = mysqli_num_rows($result); // if username not found then proceed
  
     if ($count==0) {
   
         $query = "INSERT INTO users(username,password_hash,email,status,admin,name) VALUES('$username','$hashed_pass','$email',1,0,'$name')";
-        $res = mysqli_query($connect, $query) or die(mysql_error());
+        mysqli_query($connect, $query) or die(mysql_error());
   
-        if ($res) {
+        $query2 = "SELECT ID FROM users WHERE username LIKE '$username'";
+        $results = mysqli_query($connect, $query2) or die(mysql_error());
+        $id_data = mysqli_fetch_array($results, MYSQLI_ASSOC);
+
+        $user_code = $id_data['ID'];
+        $query3 = "INSERT INTO users_data VALUES('$user_code','$addressname','$address','$city','$country','$postcode','$phone')";
+        $res2 = mysqli_query($connect, $query3) or die(mysql_error());
+
+        if ($res2) {
             echo "<br><br>Successfully registered, redirecting to login page...";
             header('Refresh: 3;url=login.php');
         } else {
