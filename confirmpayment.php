@@ -19,7 +19,7 @@
     </tr>
     <tr>
         <td>Transaction ID</td>
-        <td><input type="number" data-parsley-type="cstid" size="80" name="cstname" required=""><span id="usrmsg"></span></td></td>
+        <td><input type="number" size="80" name="cstid" required=""><span id="usrmsg"></span></td></td>
     </tr>
     <tr>
         <td>Card Holder Name</td>
@@ -35,7 +35,7 @@
     </tr>
     <tr>
         <td>Date of Transfer</td>
-        <td><input type="date" name="cstdate" size="80" required=""><span id="repasswdmsg"></span></td>
+        <td><input type="text" name="cstdate" size="80" required=""><span id="repasswdmsg"></span></td>
     </tr>
     <tr>
         <td>Account Username</td>
