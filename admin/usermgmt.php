@@ -62,8 +62,9 @@ $query = mysqli_query($db_link,$sql);
 		<td p align="center" bgcolor="#FFFFFF"><?php echo $data['admin']; ?></td>
 		<td p align="center" bgcolor="#FFFFFF"><?php echo $data['name']; ?></td>
 		<td p align="center" bgcolor="#FFFFFF">
-		<a href="editproduct.php?id=<?php echo $data['id'];?>" title="Edit this product?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Edit.png"></img></a>
-		<a href="deleteproduct.php?id=<?php echo $data['id'];?>" onclick="return confirm('Delete confirmation?')" title="Delete this product?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Delete.png"></img></a>
+		<a href="viewusers.php?id=<?php echo $data['ID'];?>" title="Show user data?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Find.png"></img></a>
+        <a href="editusers.php?id=<?php echo $data['ID'];?>" title="Edit this user?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Edit.png"></img></a>
+		<a href="deleteusers.php?id=<?php echo $data['ID'];?>" onclick="return confirm('Delete confirmation?')" title="Delete this user?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Delete.png"></img></a>
 		</td>
 	</tr>
 <?php
