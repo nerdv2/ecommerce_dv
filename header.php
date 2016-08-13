@@ -67,7 +67,7 @@
 
 	<form method="post" action="search.php">
 	<div class="input-group stylish-input-group">
-        <input type="text" class="form-control" name="tosearch"  placeholder="Search" >
+        <input type="text" class="form-control" name="tosearch"  placeholder="Search product..." >
         <span class="input-group-addon">
             <button type="submit">
             	<span class="glyphicon glyphicon-search"></span>
