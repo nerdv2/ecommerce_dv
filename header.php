@@ -50,8 +50,10 @@
 		}
 		if (isset($_SESSION['username']))
 		{
-			echo "Welcome " . $_SESSION['username'] .  "&nbsp;&nbsp;&nbsp;";
-			echo "<a href=\"logout.php\">Log Out</a></td></tr>";
+			echo "Welcome, " . $_SESSION['username'] .  "&nbsp;&nbsp;&nbsp;&nbsp;";
+			echo "<a href=\"confirmpayment.php\">Confirm Payment</a>";
+			echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+			echo "<a href=\"logout.php\">Log Out</a>";
 		}
 		else
 		{
