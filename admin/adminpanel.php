@@ -28,7 +28,7 @@
   <tr>
 		<td width="150" height="29" align="center" valign="middle" bgcolor="#00FFFF"><a href="productmgmt.php">Product Management</td>
     <td width="150" height="29" align="center" valign="middle" bgcolor="#00FFFF"><a href="">Order Management</td>
-    <td width="150" height="29" align="center" valign="middle" bgcolor="#00FFFF"><a href="">Payment Management</td>
+    <td width="150" height="29" align="center" valign="middle" bgcolor="#00FFFF"><a href="paymentmgmt.php">Payment Management</td>
 	</tr>
 </table>
 <p align="center">Copyright (c) 2016 eCommerce_dv, All Right Reserved. Programmed by : <a href="mailto:gema_wardian@hotmail.com">Gema Aji W.</a> and <a href="mailto:dangridho99@gmail.com">Dang Ridho</a></p>

@@ -21,7 +21,7 @@ $sql = 'select * from product_data';
 $query = mysqli_query($db_link,$sql);
 ?>
 <h2><strong><p align="center">Product Data</p></strong></h2>
-<h4><p align="center"><a href="adminpanel.php">Return to Admin Panel<a></p></h4>
+<h4><p align="center"><a href="adminpanel.php">Return to Admin Panel</a></p></h4>
 <table width="850" border="1" cellpadding="0" align="center" class="bordered">
 	<tr>
 		<form method="get" action="search.php">
