@@ -7,6 +7,38 @@
 <link rel="stylesheet" href="assets/parsley.css">
 <script src="assets/jquery.min.js"></script>
 <script src="assets/parsley.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+	function makeRequestObject(){
+	var xmlhttp=false;
+	try {
+		xmlhttp = new ActiveXObject('Msxml2.XMLHTTP');
+	} catch (e) {
+	try {
+		xmlhttp = new
+		ActiveXObject('Microsoft.XMLHTTP');
+	} catch (E) {
+		xmlhttp = false;
+	}
+	}
+	
+	if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+		xmlhttp = new XMLHttpRequest();
+	}
+	return xmlhttp;
+	}
+
+	function updateCart(){
+		var xmlhttp=makeRequestObject();
+		xmlhttp.open('GET', 'countcart.php', true);
+		xmlhttp.onreadystatechange = function(){
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			var ajaxCart = document.getElementById("cartcountinfo");
+			ajaxCart.innerHTML = xmlhttp.responseText;
+		}
+	}
+	xmlhttp.send(null);
+	}
+</script>
 </head>
 <body>
 <div class="container">
