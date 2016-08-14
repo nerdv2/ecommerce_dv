@@ -51,6 +51,8 @@
 		if (isset($_SESSION['username']))
 		{
 			echo "Welcome, " . $_SESSION['username'] .  "&nbsp;&nbsp;&nbsp;&nbsp;";
+			echo "<a href=\"orderhistory.php\">Order History</a>";
+			echo "&nbsp;&nbsp;&nbsp;&nbsp;";
 			echo "<a href=\"confirmpayment.php\">Confirm Payment</a>";
 			echo "&nbsp;&nbsp;&nbsp;&nbsp;";
 			echo "<a href=\"logout.php\">Log Out</a>";
