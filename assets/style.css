@@ -1,0 +1,56 @@
+
+a, 
+a:hover, 
+a:visited {
+    outline:none;
+}
+a {
+    color:#008ce5;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+
+.titlebar {
+    color:#000;
+    text-decoration: none;
+}
+
+.titlebar:hover {
+    text-decoration: none;
+}
+
+body {
+    width:900px;
+    margin: 40px auto;
+    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 14px;
+    color: #000;
+}
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width:100%;    
+}
+
+img {
+max-width:180px;
+max-height:200px;
+width:auto;
+height:auto;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
