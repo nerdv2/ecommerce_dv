@@ -3,6 +3,7 @@
     include('config.php');
 ?>
 </p>
+<div class="box-slider">
 <ul id="lightSlider">
   <li>
       <h3>Dell XXx</h3>
@@ -25,6 +26,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut commodo orci, nec tincidunt nisi. Morbi ut ultricies nisl. Aenean blandit pretium rhoncus. Vivamus eu nunc fermentum, placerat risus nec, mattis quam. Duis ac nisi ligula. Vestibulum mollis nisl ac ante aliquet, quis lobortis massa ornare. Donec eget diam non ante luctus lobortis. </p>
   </li>
 </ul>
+</div>
 <?php
 
     function getData(){
@@ -62,7 +64,24 @@
                 pause: 5000,
                 pauseOnHover: true,
                 auto: true,
-                loop: true
+                loop: true,
+                        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:1,
+                    slideMove:1
+                  }
+            }
+        ]
             });
         });
     </script>
