@@ -24,15 +24,15 @@ $query = mysqli_query($db_link,$sql);
 <h4><p align="center"><a href="adminpanel.php">Return to Admin Panel</a></p></h4>
 <table width="850" border="1" cellpadding="0" align="center" class="bordered">
 	<tr>
-		<form method="get" action="search.php">
+		<form method="get" action="searchuser.php">
 		<td colspan='11'><select name="searchwhat">
 			<option selected="selected">--Search--</option>
-				<option name='ID' value='product_id'>Users ID</option>
-				<option name='username' value='product_name'>Username</option>
-				<option name='email' value='category_id'>Email</option>
-                <option name='status' value='category_id'>Status</option>
-                <option name='admin' value='category_id'>Admin</option>
-                <option name='name' value='category_id'>Customer Name</option>
+				<option name='ID' value='ID'>Users ID</option>
+				<option name='username' value='username'>Username</option>
+				<option name='email' value='email'>Email</option>
+                <option name='status' value='status'>Status</option>
+                <option name='admin' value='admin'>Admin</option>
+                <option name='name' value='name'>Customer Name</option>
 			</select>
 			<input type="text"  class="searchinput" value="" name="searchname"><br>
 			<input type="submit" name="tsearch" value="SEARCH">
@@ -48,7 +48,7 @@ $query = mysqli_query($db_link,$sql);
 		<td align="center" valign="middle" bgcolor="#00FFFF">Status</td>
 		<td align="center" valign="middle" bgcolor="#00FFFF">Admin</td>
 		<td align="center" valign="middle" bgcolor="#00FFFF">Customer Name</td>
-		<td align="center" valign="middle" bgcolor="#00FFFF"><a href="addproduct.php"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Add.png"></img></a>
+		<td align="center" valign="middle" bgcolor="#00FFFF">
 		</td>
 	</tr>
 <?php
@@ -62,9 +62,9 @@ $query = mysqli_query($db_link,$sql);
 		<td p align="center" bgcolor="#FFFFFF"><?php echo $data['admin']; ?></td>
 		<td p align="center" bgcolor="#FFFFFF"><?php echo $data['name']; ?></td>
 		<td p align="center" bgcolor="#FFFFFF">
-		<a href="viewusers.php?id=<?php echo $data['ID'];?>" title="Show user data?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Find.png"></img></a>
-        <a href="editusers.php?id=<?php echo $data['ID'];?>" title="Edit this user?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Edit.png"></img></a>
-		<a href="deleteusers.php?id=<?php echo $data['ID'];?>" onclick="return confirm('Delete confirmation?')" title="Delete this user?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Delete.png"></img></a>
+		<a href="viewuser.php?id=<?php echo $data['ID'];?>" title="Show user data?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Find.png"></img></a>
+        <a href="edit_user.php?id=<?php echo $data['ID'];?>" title="Edit this user?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Edit.png"></img></a>
+		<a href="deleteuser.php?id=<?php echo $data['ID'];?>" onclick="return confirm('Delete confirmation?')" title="Delete this user?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Delete.png"></img></a>
 		</td>
 	</tr>
 <?php

@@ -24,7 +24,7 @@ $query = mysqli_query($db_link,$sql);
 <h4><p align="center"><a href="adminpanel.php">Return to Admin Panel</a></p></h4>
 <table width="900" border="1" cellpadding="0" align="center" class="bordered">
 	<tr>
-		<form method="get" action="search.php">
+		<form method="get" action="searchpayment.php">
 		<td colspan='11'><select name="searchwhat">
 			<option selected="selected">--Search--</option>
 				<option name='order_id' value='order_id'>Order ID</option>

@@ -24,12 +24,12 @@ $query = mysqli_query($db_link,$sql);
 <h4><p align="center"><a href="adminpanel.php">Return to Admin Panel</a></p></h4>
 <table width="850" border="1" cellpadding="0" align="center" class="bordered">
 	<tr>
-		<form method="get" action="search.php">
+		<form method="get" action="searchproduct.php">
 		<td colspan='11'><select name="searchwhat">
 			<option selected="selected">--Search--</option>
-				<option name='product_id' value='product_id'>Product ID</option>
-				<option name='product_name' value='product_name'>Product Name</option>
-				<option name='category_id' value='category_id'>Category ID</option>
+				<option name='id' value='id'>Product ID</option>
+				<option name='name' value='name'>Product Name</option>
+				<option name='id' value='id'>Category ID</option>
 			</select>
 			<input type="text"  class="searchinput" value="" name="searchname"><br>
 			<input type="submit" name="tsearch" value="SEARCH">
@@ -49,7 +49,7 @@ $query = mysqli_query($db_link,$sql);
 		<td align="center" valign="middle" bgcolor="#00FFFF">Dimension</td>
 		<td align="center" valign="middle" bgcolor="#00FFFF">Image Link</td>
 		<td align="center" valign="middle" bgcolor="#00FFFF">Info</td>
-		<td align="center" valign="middle" bgcolor="#00FFFF"><a href="addproduct.php"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Add.png"></img></a>
+		<td align="center" valign="middle" bgcolor="#00FFFF"><a href="add_product.php"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Add.png"></img></a>
 		</td>
 	</tr>
 <?php
@@ -67,7 +67,7 @@ $query = mysqli_query($db_link,$sql);
 		<td p align="center" bgcolor="#FFFFFF"><?php echo $data['image']; ?></td>
 		<td p align="center" bgcolor="#FFFFFF"><?php echo $data['info']; ?></td>
 		<td p align="center" bgcolor="#FFFFFF">
-		<a href="editproduct.php?id=<?php echo $data['id'];?>" title="Edit this product?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Edit.png"></img></a>
+		<a href="edit_product.php?id=<?php echo $data['id'];?>" title="Edit this product?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Edit.png"></img></a>
 		<a href="deleteproduct.php?id=<?php echo $data['id'];?>" onclick="return confirm('Delete confirmation?')" title="Delete this product?"><img style="max-width:40px;max-height:40px;width:auto;height:auto;" src="img/Page-Delete.png"></img></a>
 		</td>
 	</tr>

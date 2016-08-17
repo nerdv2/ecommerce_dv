@@ -26,7 +26,7 @@
         <td><input type="password" minlength="6" name="cstpassword" size="80" required=""><span id="passwdmsg"></span></td>
     </tr>
     <tr>
-        <td colspan="2">
+        <td colspan="2" width="600px">
         <input type="submit" value="Submit">
         <input type="reset" value="Reset Form">
         </td>

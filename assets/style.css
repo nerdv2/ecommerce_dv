@@ -21,9 +21,16 @@ a:hover {
     text-decoration: none;
 }
 
+.truncate {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 body {
     width:900px;
-    margin: 40px auto;
+    margin: 14px auto;
     font-family: 'trebuchet MS', 'Lucida sans', Arial;
     font-size: 14px;
     color: #000;
@@ -33,6 +40,17 @@ table {
     *border-collapse: collapse; /* IE7 and lower */
     border-spacing: 0;
     width:100%;    
+}
+
+.homepagetable { 
+  max-width: 320px;
+  width: 320px;
+  padding: 6px; 
+}
+
+#page-wrap {
+     width: 800px;
+     margin: 0 auto;
 }
 
 img {

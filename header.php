@@ -5,7 +5,10 @@
 <link rel="stylesheet" href="assets/bootstrap.min.css">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="assets/parsley.css">
+<link type="text/css" rel="stylesheet" href="assets/css/lightslider.css" />
+
 <script src="assets/jquery.min.js"></script>
+<script src="assets/js/lightslider.js"></script>
 <script src="assets/parsley.js"></script>
 <script language="JavaScript" type="text/JavaScript">
 	function makeRequestObject(){
@@ -41,8 +44,9 @@
 </script>
 </head>
 <body>
-<div class="container">
+<div class="page-wrap">
 <table cellspacing="0" cellpadding="2">
+<tr class="homepagetable"><td class='homepagetable' colspan="3">
 <p align="right">
 <?php
 	if (session_status() == PHP_SESSION_NONE) {
@@ -50,7 +54,7 @@
 		}
 		if (isset($_SESSION['username']))
 		{
-			echo "Welcome, " . $_SESSION['username'] .  "&nbsp;&nbsp;&nbsp;&nbsp;";
+			echo "Welcome,<a href='edituser.php'> " . $_SESSION['username'] .  "</a>&nbsp;&nbsp;|&nbsp;&nbsp;";
 			echo "<a href=\"orderhistory.php\">Order History</a>";
 			echo "&nbsp;&nbsp;&nbsp;&nbsp;";
 			echo "<a href=\"confirmpayment.php\">Confirm Payment</a>";
@@ -63,6 +67,7 @@
 			echo "<a href=\"signup.php\">Create Account</a></td></tr>";
 		}?>
 </p>
+</td></tr>
 	<tr><td style="font-size: 35px;">
     	<b><a href="index.php" class="titlebar">ecommerce_dv</a></b></font></td>
 	<td>

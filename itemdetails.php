@@ -31,7 +31,7 @@
             echo "&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"submit\" name=\"addtocart\" value=\"Add To Cart\"></td>";
             echo"  </form>";
             echo "</td></tr><tr>";
-            echo "<td colspan='2'>". $row['info'] ."<br>";
+            echo "<td colspan='2'><br><br><br>". $row['info'] ."<br>";
             echo "</td></tr>";
             echo "</table>";
         }
